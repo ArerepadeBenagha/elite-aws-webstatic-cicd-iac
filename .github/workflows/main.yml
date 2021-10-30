@@ -19,9 +19,9 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
-    - name: change directory to public folder
-      run: |
-       cd /home/runner/work/elite-aws-s3-static-website-terraform/elite-aws-s3-static-website-terraform/public
+    # - name: change directory to public folder
+    #   run: |
+    #    cd /home/runner/work/elite-aws-s3-static-website-terraform/elite-aws-s3-static-website-terraform/public
 
     # Copy the files from the site directory to the bucket
     - name: Copy files to the development website with the AWS CLI
