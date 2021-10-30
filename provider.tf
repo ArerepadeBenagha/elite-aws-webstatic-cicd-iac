@@ -13,6 +13,7 @@ terraform {
 #   region     = var.aws_region
 # }
 
+
 # provider "aws" {
 #   alias      = "acm_provider"
 #   access_key = var.AWS_ACCESS_KEY_ID
