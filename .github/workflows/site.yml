@@ -23,4 +23,4 @@ jobs:
       run: cd /home/runner/work/elite-aws-webstatic-cicd-iac/elite-aws-webstatic-cicd-iac/public
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./public/ s3://${{ secrets.S3_BUCKET_NAME }}
+      run: aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }}
