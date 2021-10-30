@@ -1,12 +1,13 @@
-name: deploy
+name: Upload Website
+
 on:
   push:
     branches:
-      - master
+    - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout
       uses: actions/checkout@v1
