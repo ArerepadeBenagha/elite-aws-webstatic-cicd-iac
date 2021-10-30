@@ -1,4 +1,4 @@
-name: cd
+name: print working directory
 on:
   push:
     branches:
@@ -11,6 +11,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Experiment
+    - name: pwd output
       run: |
         pwd       
